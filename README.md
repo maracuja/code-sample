@@ -1,7 +1,8 @@
 # Code Sample™
-## Here's something I sent to another company a few weeks ago ... 
-
-This was an app from one of our sites ballball, that facilitated the translation of
+I've been asked by several potential employers to supply a code sample and since most of
+my work is on client sites there's a limit to what I can show in my Github profile so I've
+picked a small feature that demonstrates the use of an external service and some light queue
+use. This was an app from one of our sites ballball, that facilitated the translation of
 content via Smartling which is a human translation service.
 
 The basic idea is that an editor would login to the CMS, create a copy of an English
@@ -17,7 +18,7 @@ created. (views.py and urls.py)
 A class called SmartlingService then abstracted all the nitty gritty of packaging up the
 objects and the communication between the two systems (services/Smartling.py)
 
-Why I chose this code. It's not perfect, but the things I like about it are: -
+The things I like about it are: -
 * The use of signals and queues, we did as much as we could to keep the CMS responsive so
 the user gets an instant response when they hit save. The CMS does all the API handling
 in the background.
